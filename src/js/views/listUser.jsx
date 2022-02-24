@@ -8,7 +8,7 @@ const ListUser = () => {
         fetch('https://randomuser.me/api/?results=20')
         .then(res => res.json())
         .then(res =>{
-            console.log(res.results)
+            setUsers(res.results);
 
         })
     },[])
