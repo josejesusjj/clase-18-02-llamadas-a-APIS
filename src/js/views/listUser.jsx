@@ -17,8 +17,11 @@ const ListUser = () => {
         <div className="container">
             <h4>Listado de usuarios:</h4>
             <div className="row">
-                <User name="Maria" phone="123123123" email="maria@email.es" picture="" />
+                {users ? (
+                    <User name="Maria" phone="123123123" email="maria@email.es" picture="" />
 
+                ):("cargando usuarios...")}
+                
             </div>
         </div>
     )
